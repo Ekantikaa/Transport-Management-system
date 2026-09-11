@@ -1,1 +1,3 @@
-console.log("Transport Management System loaded successfully!");
+function showMessage(section) {
+    alert("You selected: " + section);
+}

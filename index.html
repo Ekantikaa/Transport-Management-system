@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transport Management System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+    nav {
+      background: #34495e;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+    footer {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0; width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Transport Management System</h1>
+  </header>
+
+  <nav>
+    <a href="#vehicles">Vehicles</a>
+    <a href="#drivers">Drivers</a>
+    <a href="#routes">Routes</a>
+    <a href="#bookings">Bookings</a>
+  </nav>
+
+  <section id="vehicles">
+    <h2>Vehicles</h2>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Type</th>
+        <th>Capacity</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>V001</td>
+        <td>Bus</td>
+        <td>50</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <td>V002</td>
+        <td>Truck</td>
+        <td>20 Tons</td>
+        <td>In Transit</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="drivers">
+    <h2>Drivers</h2>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>License</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>D001</td>
+        <td>Arun Kumar</td>
+        <td>LMV</td>
+        <td>Active</td>
+      </tr>
+      <tr>
+        <td>D002</td>
+        <td>Ravi Sharma</td>
+        <td>Heavy Vehicle</td>
+        <td>On Leave</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="routes">
+    <h2>Routes</h2>
+    <table>
+      <tr>
+        <th>Route ID</th>
+        <th>Start</th>
+        <th>Destination</th>
+        <th>Distance</th>
+      </tr>
+      <tr>
+        <td>R001</td>
+        <td>Pollachi</td>
+        <td>Coimbatore</td>
+        <td>40 km</td>
+      </tr>
+      <tr>
+        <td>R002</td>
+        <td>Chennai</td>
+        <td>Bangalore</td>
+        <td>350 km</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="bookings">
+    <h2>Bookings</h2>
+    <form>
+      <label for="vehicle">Select Vehicle:</label>
+      <select id="vehicle" name="vehicle">
+        <option>Bus - V001</option>
+        <option>Truck - V002</option>
+      </select><br><br>
+
+      <label for="route">Select Route:</label>
+      <select id="route" name="route">
+        <option>Pollachi → Coimbatore</option>
+        <option>Chennai → Bangalore</option>
+      </select><br><br>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date"><br><br>
+
+      <button type="submit">Book Transport</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Transport Management System</p>
+  </footer>
+</body>
+</html>
